@@ -6,7 +6,7 @@ const morgan = require("morgan");
 // const { default: fetch } = require("node-fetch");
 const jwt = require("jsonwebtoken");
 
-const PORT = process.env.PORT || 9000;
+const port = process.env.PORT || 9000;
 const app = express();
 
 app.use(cors());
@@ -35,6 +35,6 @@ app.get("/hakuna-matata", (req, res) => {
   res.json({ token });
 });
 
-app.listen(PORT, () => {
+app.listen(port, () => {
   console.log(`API server listening at http://locahost:${PORT}`);
 });
