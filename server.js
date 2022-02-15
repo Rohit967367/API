@@ -19,8 +19,9 @@ app.get("/", (req, res) => {
 });
 
 app.get("/hakuna-matata", (req, res) => {
-  const API_KEY = process.env.API_KEY;
-  const SECRET_KEY = process.env.SECRET_KEY;
+  const API_KEY = "2e817630-b783-455a-acb9-b836fe712bba";
+  const SECRET_KEY =
+    "0a2d3a665153637278fcd10c8f9ad51e8660e65d747dd20b88a7fcb3dbe49d43";
 
   const options = { expiresIn: "10m", algorithm: "HS256" };
 
