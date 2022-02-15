@@ -36,5 +36,5 @@ app.get("/hakuna-matata", (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`API server listening at http://locahost:${PORT}`);
+  console.log(`API server listening at http://locahost:${port}`);
 });
