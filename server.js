@@ -6,7 +6,7 @@ const morgan = require("morgan");
 // const { default: fetch } = require("node-fetch");
 const jwt = require("jsonwebtoken");
 
-const PORT = 9000;
+const PORT = process.env.PORT || 9000;
 const app = express();
 
 app.use(cors());
